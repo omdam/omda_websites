@@ -1,0 +1,92 @@
+/* start header */
+header {
+    .nav-logo-warp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+        @include sm {
+            position: relative;
+            padding: 15px 0;
+        }
+    }
+
+    .logo {
+        width: 119px;
+        @include sm {
+            width: 100px;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .nav-cart {
+        display: flex;
+        align-items: center;
+        position: relative;
+        @include sm {
+            position: static;
+        }
+        .cart-om {
+            display: flex;
+            align-items: center;
+            margin-left: 58px;
+            @include dir {
+                margin-left: 0;
+                margin-right: 58px;
+            }
+            li {
+                &:not(:first-child) {
+                    margin-left: 30px;
+                    @include sm {
+                        margin-left: 20px;
+                    }
+                    @include dir {
+                        margin-left: 0;
+                        margin-right: 30px;
+                        @include sm {
+                            margin-left: 0;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+            .link-om {
+                font-size: 30px;
+                color: #9f9b8b;
+                transition: 0.4s;
+                text-decoration: none;
+                @include sm {
+                    font-size: 27px;
+                }
+                &:hover {
+                    color: #000;
+                }
+                .lnr{
+                    height: 30px;
+                    display: block;
+                }
+            }
+            .colse-act-om {
+                .lnr-magnifier {
+                    &::before {
+                        content: "\e870";
+                    }
+                }
+            }
+
+            .men-butt {
+                display: none;
+                @include sm {
+                    display: block;
+                    
+                    .men-butt-om {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
