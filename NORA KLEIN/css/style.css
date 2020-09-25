@@ -148,10 +148,6 @@ header .nav-s .nav-c .nav-cs > li > a:after{
 	display: none;
 }
 
-header .nav-s .nav-c .nav-cs > li:hover > a:after{
-	display: block;
-}
-
 header .nav-s .nav-c .nav-cs > li.s-search > a:after{
 	display: block;
 }
