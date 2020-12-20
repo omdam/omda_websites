@@ -1,0 +1,126 @@
+// dropdown menue
+.drop-om {
+    position: relative;
+
+    .drop-list-om {
+        list-style: none;
+        margin-bottom: 0;
+        display: block;
+        position: absolute;
+        top: 100%;
+        background-color: #a4a091;
+        z-index: 11;
+        min-width: 185px;
+        border-radius: 0px;
+        margin-top: 0;
+        padding: 8px 13px;
+        border: none;
+        transform-origin: center 0;
+        transition: 0.4s;
+        visibility: hidden;
+        opacity: 0;
+        left: -20px;
+        @include dir {
+            left: unset;
+            right: -20px;
+        }
+        li {
+            &:not(:last-child) {
+                border-bottom: 1px solid #b3b0a4;
+                
+            }
+        }
+
+        a {
+            color: #efece2;
+            font-size: 14px;
+            padding: 6px 8px;
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.4s;
+            &:hover {
+                color: #fff;
+            }
+
+        }
+
+    }
+    &:hover  {
+        .drop-list-om {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+   
+}
+
+// small devices in nav 
+.collapse-drop-om {
+    .cd-head-om {
+        @include sm{
+            position: relative;
+            &::after {
+                content: "\e874";
+                font-family: Linearicons-Free;
+                position: absolute;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 14px;
+                transition: 0.3s;
+                color: #000;
+                @include dir {
+                    left: 5px;
+                    right: unset;
+                }
+            }
+            &.arr-rotate {
+                &::after {
+                    content: "\e873";
+                }
+            }
+        }
+    }
+
+    .cd-list-om {
+        @include sm  {
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            position: static;
+            background-color: transparent;
+            box-shadow: none;
+            padding: 0 8px;
+            display: none;
+            transition: unset;
+        }
+
+        li {
+            &:not(:last-child) {
+                @include sm {
+                    border-color: #eaeaea;
+                }
+            }
+        }
+
+        a {
+            @include sm  {
+                opacity: 1;
+                color: #a2a2a2;
+                text-align: unset;
+                padding: 8px 5px;
+                font-size: 13px;
+                &:hover {
+                    color: #a2a2a2;
+                }
+            }
+        }
+
+        &::after {
+            @include sm {
+                display: none;
+            }
+        }
+    }
+}

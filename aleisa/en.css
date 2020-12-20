@@ -1,0 +1,108 @@
+
+body{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: open-sansregular ;
+}
+
+header ul.navbar-right{
+    margin-top: 30px !important;
+}
+
+.navbar-default .navbar-nav > li > a{
+    font-family: open-sansbold ;
+}
+.head{
+    font-family:open-sansextrabold;
+    text-transform: uppercase;
+    
+}
+.onepage-pagination {
+    right: 23px;
+}
+.main section.page2{
+    background: url(images/inter.png) no-repeat 80% -50%;
+    background-color: #ec601e;
+}
+.intero .style{
+    padding-right: 200px;
+}
+.send  a.btn.btn-default {
+    font-family: open-sansextrabold;
+
+}
+
+.place .pl-modal input[type="file"]{
+    direction: rtl;
+}
+
+.place .pl-modal .form-inline .la-file{
+    right: 20px;
+    left: initial;
+}
+
+.place .pl-modal .form-inline .cv{
+    right: initial;
+    left: 40px;
+}
+
+.slider .carousel-caption{
+    left: initial;
+    bottom: initial;
+    top: 236px;
+    left: 87px;
+    right: initial;
+    text-align: left;
+}
+
+
+@media (max-width: 991px){
+   header .navbar-default .navbar-nav > li{
+       padding: 8px 15px;
+   }
+}
+
+@media (max-width: 767px){
+    .menu .navbar-left {
+        margin-left: 15px;
+    }
+
+    header .navbar-default .navbar-collapse > img{
+        left: initial;
+        right: 20px;
+    }
+
+    header .navbar-default .navbar-collapse, header .navbar-default .navbar-form{
+        right: initial;
+        left: -300px;
+    }
+
+    .slider .carousel-caption {
+        left: 23px !important;
+        text-align: left !important;
+    }
+
+    header .navbar-default .men-go{
+        left: 15px;
+    }
+
+    header .navbar-default  .navbar-left {
+        margin-left: 15px;
+    }
+    .onepage-pagination {
+        right: 15px;
+        left: initial !important;
+    }
+
+    .intero .style{
+        padding-right: 10px;
+        padding-left: 10px;
+   }
+
+   .trade .trade-block h1.head{
+        text-align: center;
+   }
+
+}
+
+

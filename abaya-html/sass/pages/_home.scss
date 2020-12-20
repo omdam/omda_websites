@@ -1,0 +1,380 @@
+// home page style
+
+/*start abaya-sections*/
+.abaya-sections  {
+   padding-bottom: 70px;
+   @include sm {
+       padding-bottom: 0;
+   }
+}
+
+.block-abaya-om {
+    margin-bottom: 30px;
+    position: relative;
+    @include sm {
+        margin-bottom: 15px;
+    }
+    .img-block {
+        display: block;
+        position: relative;
+        padding-bottom: 100%;
+        overflow: hidden;
+        @media only screen and (max-width: 1400px) {
+            padding-bottom: 101.5%;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 1s;
+        }
+        
+    }
+    
+
+    .fig-cap-om {
+        position: absolute;
+        bottom: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+        .title-om {
+            font-size: 36px;
+            font-family: 'CooperHewitt-Light';
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            line-height: 1.2;
+            text-transform: uppercase;
+            @include dir {
+                font-family: 'Tajawal-light';
+            }
+        }
+        .shop-now-om {
+            width: 200px;
+            height: 60px;
+            margin: auto;
+            border: 2px solid #fff;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #fff;
+            margin-top: 40px;
+            transition: 0.4s;
+            text-transform: uppercase;
+            &:hover {
+                background-color: #fff;
+                color:#000;
+            }
+        }
+    }
+
+    &:hover {
+        .img-block{
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+}
+
+.abaya-om-1 {
+
+    .fig-cap-om {
+        bottom: 100px;
+        width: 100%;
+        @include xs {
+            bottom: 40px;
+        }
+        .title-om {
+            font-size: 60px;
+            font-family: 'CooperHewitt-Heavy';
+            @include dir {
+                font-family: 'Tajawal-black';
+            }
+            @include xs {
+                font-size: 30px;
+            }        
+        }
+        .shop-now-om {
+            @include xs {
+                font-size: 20px;
+                width: 160px;
+                height: 48px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.abaya-om-2 {
+    .img-block {
+        padding-bottom: 48%;
+    }
+
+    .fig-cap-om {
+        bottom: 50%;
+        transform: translateY(50%);
+        right: 82px;
+        left: unset;
+        @include xs {
+            right: 13%;
+        }
+        .title-om {
+            font-size: 48px;
+            font-family: 'CooperHewitt-Heavy';
+            @include dir {
+                font-family: 'Tajawal-black';
+            }
+            @include xs {
+                font-size: 25px;
+            }
+        }
+        .shop-now-om {
+            margin-top: 20px;
+            font-size: 20px;
+            width: 160px;
+            height: 48px;
+            @include xs {
+                margin-top: 10px;
+                font-size: 15px;
+                width: 100px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+.abaya-om-3 {
+    .img-block {
+        padding-bottom: 48%;
+    }
+
+    .fig-cap-om {
+        bottom: 50%;
+        transform: translateY(50%);
+        left: 70px;
+        @include xs  {
+            left: 10%;
+        }
+        .title-om {
+            font-size: 48px;
+            font-family: 'CooperHewitt-Book';
+            color: #1c1c1b;
+            @include dir {
+                font-family: 'Tajawal-reg';
+            }
+            @include xs {
+                font-size: 25px ;
+            }
+        }
+        .shop-now-om {
+            margin-top: 20px;
+            font-size: 20px;
+            width: 160px;
+            height: 48px;
+            background-color: #9f9b8b ;
+            color: #fff;
+            border: none;
+            @include xs {
+                font-size: 15px;
+                height: 40px;
+                width: 100px;
+            }
+            &:hover {
+                color: #fff;
+                background-color: #000;
+            }
+        }
+    }
+}
+.banner {
+    .img-block {
+        padding-bottom: 48%;
+    }
+    &:hover {
+        .img-block{
+            img {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+/*end abaya-sections*/
+
+/*start products-om*/
+.products-om {
+    padding-top: 70px;
+    padding-bottom: 135px;
+    @include sm {
+        padding: 20px 0 50px;
+    }
+    .head-om {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+        color: #000;
+        text-transform: uppercase;
+        @include sm {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.product-block-om {
+    @include sm {
+        width: 280px;
+        margin: auto;
+        text-align: center;
+    }
+    .img-block {
+        position: relative;
+        padding-bottom: 136%;
+        display: block;
+        overflow: hidden;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.6s;
+        }
+        &:hover {
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .product-name {
+        font-size: 15px;
+        color: #7f7f7f;
+        display: table;
+        text-transform: capitalize;
+        margin-top: 26px;
+        margin-bottom: 12px;
+        text-decoration: none;
+        transition: 0.4s;
+        &:hover {
+            color: #000;
+        }
+        @include sm {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .price {
+        color: #000;
+        font-size: 20px;
+        text-transform: uppercase;
+    } 
+}
+/*end products-om*/
+
+
+/*start features-om*/
+.features-om {
+
+    @include xs{
+        background-color: #f7f7f7;
+    }
+    .features-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px;
+        background-color: #f7f7f7;
+        @include sm {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+        }
+        @include xs {
+            background-color: transparent;
+        }
+    }
+
+    .feature-content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @media only screen and (max-width: 1400px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @include sm {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .img-block {
+            font-size: 36.16px;
+            color: #9f9b8b;
+            margin-right: 28px;
+            height: 44px;
+            @media only screen and (max-width: 1400px)  {
+                margin: auto;
+                margin-bottom: 10px;
+            }
+            @include sm {
+                margin: auto;
+                margin-bottom: 10px;
+            }
+            @include dir {
+                margin-right: 0;
+                margin-left: 28px;
+                @media only screen and (max-width: 1400px)  {
+                    margin: auto;
+                    margin-bottom: 10px;
+                }
+                @include sm {
+                    margin: auto;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .feat-dec {
+            .head-om {
+                font-size: 19.08px;
+                color: #1c1c1b;
+                font-family: 'CooperHewitt-Heavy';
+                padding-bottom: 10px;
+                text-transform: capitalize;
+                @include dir {
+                    font-family: 'Tajawal-black';
+                }
+                @media only screen and (max-width: 1400px) {
+                    text-align: center;
+                }
+                @include sm {
+                    text-align: center;
+                }
+            }
+            .parg-om {
+                color: #7f7f7f;
+                font-size: 17.8px;
+                text-transform: capitalize;
+                @media only screen and (max-width: 1400px) {
+                    text-align: center;
+                }
+                @include sm {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+/*end features-om*/
+

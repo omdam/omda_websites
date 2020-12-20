@@ -1,0 +1,28 @@
+header .search-bt{
+	float: left;
+}
+
+header .logo{
+	float: right;
+}
+
+header .logo:before{
+	right: -1000px;
+	left: initial;
+}
+
+header .logo:after{
+	left: -80px;
+	right: initial;
+	border-left-color: transparent;
+	border-right-color: #fff;
+}
+
+header .nav-c{
+	float: left;
+}
+
+header .nav-c .nav-cs > li{
+	padding-right: 50px;
+	padding-left: 0;
+}

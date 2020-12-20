@@ -1,0 +1,93 @@
+
+body{
+    font-family: reg-shilla;
+}
+
+.head {
+    font-family:bol-shilla;
+}
+
+.onepage-pagination {
+    left: 15px;
+    right: auto
+}
+
+.style{
+    font-family: th-shilla ;
+}
+
+.main section.page2{
+    background: url(images/inter.png) no-repeat 12% -100%;
+    background-color: #ec601e;
+}
+
+.intero .style{
+    padding-left: 200px;
+    text-align: justify
+}
+
+
+.trade .trade-block h1.head{
+    text-align: right;
+}
+
+.send  a.btn.btn-default {
+font-weight: bolder;
+}
+
+.slider .carousel-caption{
+    text-align: right;
+}
+
+.slider .carousel-caption h1:first-child{
+    font-family:bol-shilla;
+}
+
+.slider .carousel-caption h1:last-child{
+    font-family: th-shilla ;
+}
+
+.slider .carousel-caption{
+    left: initial;
+    bottom: initial;
+    top: 236px;
+    right: 87px;
+}
+
+@media (max-width:1199px)
+{
+    .onepage-pagination {
+        left: 0;
+        right: auto
+    }  
+}
+
+@media (max-width:991px)
+{ 
+   
+}
+
+@media (max-width:767px)
+{ 
+
+   
+
+    .slider .carousel-caption{
+        right: 15px;
+    }
+
+   .intero .style{
+        padding-right: 10px;
+        padding-left: 10px;
+   }
+
+   .trade .trade-block h1.head{
+        text-align: center;
+   }
+}
+
+@media (max-width:450px)
+{ 
+
+}
+
