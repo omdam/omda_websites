@@ -79,7 +79,7 @@
 html[lang='en-US'] body {
     font-size: 16px;
     font-family: 'WorkSans-rg';
-    overflow: hidden;
+/*     overflow: hidden; */
     line-height: 1.6;
 }
 
