@@ -38,16 +38,16 @@ $(document).ready(function(){
     });
 });
 
-$(window).load(function(){
+// $(window).load(function(){
     
-    // loading#######################################
-    $('.loading-overlay .load').fadeOut(2000,
-    function()
-    {    
-        $('.loading-overlay').fadeOut(1000,function(){ 
-            $(this).remove();
-        });
+//     // loading#######################################
+//     $('.loading-overlay .load').fadeOut(2000,
+//     function()
+//     {    
+//         $('.loading-overlay').fadeOut(1000,function(){ 
+//             $(this).remove();
+//         });
 
-    });
+//     });
 
-});
+// });
