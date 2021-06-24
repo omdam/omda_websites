@@ -1,16 +1,16 @@
 //pre loader
-$(window).load(function () {
-    // loading#######################################
-    $('.loading-overlay .load').fadeOut(2000,
-        function () {
-            $('body').css('overflow', 'auto')
-            $('.loading-overlay').fadeOut(1000, function () {
-                $(this).remove();
+// $(window).load(function () {
+//     // loading#######################################
+//     $('.loading-overlay .load').fadeOut(2000,
+//         function () {
+//             $('body').css('overflow', 'auto')
+//             $('.loading-overlay').fadeOut(1000, function () {
+//                 $(this).remove();
 
-            });
-        });
+//             });
+//         });
 
-});
+// });
 
 
 $(document).ready(function () {
